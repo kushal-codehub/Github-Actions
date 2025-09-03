@@ -1,0 +1,26 @@
+name: First_workflow
+
+on: 
+  push:
+    branches:
+      -main
+  workflow_dispatch:
+  
+jobs:
+  checking_indexfile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cloning GIT
+        uses: action/checkout@v4
+      - name: writing commands
+        run: |
+          if [-f index.html]; then
+          echo "index file exists"
+          echo "files_exists=true" >> $GITHUB_OUTPUT
+          else
+          echo "index file doesnt exists"
+          echo "files_exists=false" >> $GITHUB_OUTPUT
+      - name: task complete
+        if: steps.check_file.outputs.file_exists == 'true'
+        run: |
+          echo "successful"
