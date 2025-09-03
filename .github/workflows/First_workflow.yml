@@ -21,6 +21,7 @@ jobs:
           else
             echo "index file doesnt exists"
             echo "files_exists=false" >> $GITHUB_OUTPUT
+            exit 1
           fi
       - name: task complete
         if: steps.check_file.outputs.file_exists == 'true'
