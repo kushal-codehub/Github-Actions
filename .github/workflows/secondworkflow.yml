@@ -37,7 +37,7 @@ jobs:
             "sudo yum install nginx -y", 
             "sudo systemctl start nginx", 
             "sudo systemctl enable nginx", 
-            "echo Nginx Installed & Started!"]'
+            "echo Nginx Installed & Started"]'
       
       - name: Deploy to EC2 using SSM
         env:
