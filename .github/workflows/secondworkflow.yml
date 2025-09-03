@@ -51,6 +51,6 @@ jobs:
           --comment "deploy index.html" \
           --parameters 'commands=[
             "echo checking if everything works..",
-            "aws s3 cp s3://homework-1212/index.html /var/www/html/index.html",
+            "aws s3 cp s3://homework-1212/index.html /usr/share/nginx/html/index.html",
             "echo successfully uploaded"]'
         
