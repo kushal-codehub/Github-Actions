@@ -12,7 +12,8 @@ jobs:
     steps:
       - name: cloning GIT
         uses: actions/checkout@v4
-      - name: writing commands
+      - name: checking index file
+        id: check_file
         run: |
           if [ -f index.html ]; then
             echo "index file exists"
@@ -20,7 +21,6 @@ jobs:
           else
             echo "index file doesnt exists"
             echo "files_exists=false" >> $GITHUB_OUTPUT
-            exit 1
           fi
       - name: task complete
         if: steps.check_file.outputs.file_exists == 'true'
