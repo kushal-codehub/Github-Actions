@@ -33,8 +33,8 @@ jobs:
           --document-name "AWS-RunShellScript" \
           --comment "Install Nginx" \
           --parameters 'commands=[
-            "sudo apt-get update -y", 
-            "sudo apt-get install nginx -y", 
+            "sudo yum update -y", 
+            "sudo yum install nginx -y", 
             "sudo systemctl start nginx", 
             "sudo systemctl enable nginx", 
             "echo Nginx Installed & Started!"]'
