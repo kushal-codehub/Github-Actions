@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>GitHub Actions Workflows for DevOps Automation</title>
 </head>
 <body>
 
