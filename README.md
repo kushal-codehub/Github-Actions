@@ -10,7 +10,7 @@
     validating files, deploying to AWS S3, and managing Nginx on EC2 instances. </h2>
   </p>
 
-  <h2>📌 Workflows</h2>
+  <h2>Workflows</h2>
 
   <h3>1. First Workflow (<code>First_workflow.yml</code>)</h3>
   <p><strong>Triggered on:</strong></p>
@@ -45,7 +45,7 @@
     </li>
   </ul>
 
-  <h2>🔑 Secrets Required</h2>
+  <h2>Secrets Required</h2>
   <p>Configure these <strong>GitHub Secrets</strong> in your repository:</p>
   <ul>
     <li><code>AWS_ACCESS_KEY_ID</code></li>
