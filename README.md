@@ -5,8 +5,6 @@
 </head>
 <body>
 
-  <h1>🚀 GitHub Actions Workflows for DevOps Automation</h1>
-
   <p>
     This repository contains <strong>GitHub Actions workflows</strong> that automate tasks such as 
     validating files, deploying to AWS S3, and managing Nginx on EC2 instances.
