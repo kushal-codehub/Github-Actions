@@ -5,9 +5,9 @@
 </head>
 <body>
 
-  <p>
+  <p> <h2>
     This repository contains <strong>GitHub Actions workflows</strong> that automate tasks such as 
-    validating files, deploying to AWS S3, and managing Nginx on EC2 instances.
+    validating files, deploying to AWS S3, and managing Nginx on EC2 instances. </h2>
   </p>
 
   <h2>📌 Workflows</h2>
